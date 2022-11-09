@@ -1,10 +1,7 @@
-
 (()=>{
-
     interface tiempos {
         tiempop : number,
         tiempoh : number
-
     }
     const tiempohorno:tiempos = {
         tiempop : 5,
@@ -29,20 +26,15 @@
         .then(resul => {
             console.log(resul);
             console.log("Tomando refresco :D")
-        })
-      
-    const HornoCaliente = setInterval(() => {  
-     
-    const horno = Promise.resolve('Bep Bep Beeep! Pizza lista!');            
-           
+        })      
+    const HornoCaliente = setInterval(() => {       
+    const horno = Promise.resolve('Bep Bep Beeep! Pizza lista!');                    
             if (tiempohorno.tiempoh === 10 ) {        
                 console.log(`Metes la pizza al horno en ${tiempohorno.tiempoh}`)        
-            }
-           
-            if(tiempohorno.tiempoh < 10 && tiempohorno.tiempoh >=1){
+            }           
+           if(tiempohorno.tiempoh < 10 && tiempohorno.tiempoh >=1){
                 console.log(`Mirando tv ${tiempohorno.tiempoh}`)
-            } 
-            
+            }             
            if(tiempohorno.tiempoh == 1) {
                clearInterval(HornoCaliente);
                 horno
