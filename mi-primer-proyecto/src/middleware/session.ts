@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from "express";
+import { NextFunction, Response } from "express";
 import { RequestExt } from "../interfaces/req-ext";
 import { verifyToken } from "../utils/jwt.handle";
 
